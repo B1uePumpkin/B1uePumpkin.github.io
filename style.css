@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:hover{
+    background-color:white;
+    color: #ff2d2d;
+}
+a{
+    color: #ff2d2d;
+}
+h1{
+    position:relative;
+    background-color: black;
+    color: #ff2d2d;
+    margin: 0;
+    border: 10px red;
+    padding: 10px 0px 10px 10px ;
+}
+h3{
+    font-size: 10px;
+    position:absolute;
+    bottom:0px;
+    background-color: black;
+    color: #ff2d2d;
+}
+div{
+    position: absolute;
+    height: 60%;
+    width: 20%;
+    opacity: 0.8;
+    color: white;
+    background-color: black;
+    border-radius: 1% 30% 1% 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#intro{
+    top: 10%;
+    left: 2%;
+}
+#goal{
+    top: 20%;
+    left: 27%;
+}
+#hobby{
+    top: 30%;
+    right: 27%;
+}
+#recommend{
+    top: 40%;
+    right: 2%;
+}
+.tr1{
+    font-size: 20px;
+}
+.back{
+    position: fixed;
+    z-index: -1;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
