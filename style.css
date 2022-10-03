@@ -1,16 +1,21 @@
 body{
+    /* 設定margin為0，防止網頁白邊
+    另外設定字體及大小 */
     margin: 0;
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 a:hover{
+    /* hover是當鼠標移到a標籤時會改變字體及背景顏色 */
     background-color:white;
     color: #ff2d2d;
 }
 a{
+    /* a標籤字體顏色 */
     color: #ff2d2d;
 }
 h1{
+    /* h1相關設定 */
     position:relative;
     background-color: black;
     color: #ff2d2d;
@@ -19,6 +24,7 @@ h1{
     padding: 10px 0px 10px 10px ;
 }
 h3{
+    /* 放在最底下的背景影片連結 */
     font-size: 10px;
     position:absolute;
     bottom:0px;
@@ -26,13 +32,23 @@ h3{
     color: #ff2d2d;
 }
 div{
+    /* 設定中間那四格黑色框框 */
+    /* 位置個別設定，所以這裡沒有設位置數值 */
     position: absolute;
+
+    /* 設定框框大小 */
     height: 60%;
     width: 20%;
+
+    /* opacity設定有點透明才不會把背景全部蓋掉 */
     opacity: 0.8;
     color: white;
     background-color: black;
+
+    /* 圓邊上、右、下、左 */
     border-radius: 1% 30% 1% 30%;
+
+    /* padding讓左右邊界跟文字有點間距 */
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -55,12 +71,22 @@ div{
 .tr1{
     font-size: 20px;
 }
+/* 網頁背景影片設定 */
 .back{
+    /* position用fixed固定位置，這樣在網頁文字往下捲的時候才不會跑掉 */
     position: fixed;
+
+    /* z-index設為-1，讓背景的layer固定在最下層(因為position:fixed會蓋住所有其他relative或absolut屬性的容器) */
     z-index: -1;
+
+    /* opacity是透明度，這裡是多餘的，1不透明、0透明 */
     opacity: 1;
+
+    /* 設定position位置 */
     top: 0;
     left: 0;
+
+    /* 讓背景永遠放最大100%，不論視窗縮多小 */
     min-width: 100%;
     min-height: 100%;
 }
