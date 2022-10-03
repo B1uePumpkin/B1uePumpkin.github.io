@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab3:Personal page on Github</title>
+    <!-- 連結css檔案 -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>
+        <!-- marquee是跑馬燈語法，使用詳情請自行搜尋 -->
         <marquee behavior="scroll" direction="left">此網頁為輔仁大學Web基本原理與技術之Lab3作業</marquee>
     </h1>
+    <!-- 善用div及class/id可以更方便的管理文字區塊及排版 -->
     <div id="intro">
         <h2>作者資料</h2>
         <p >姓名:戴昱豪<a href="https://instagram.com/chris_dai0404?r=nametag">ig:chris_0404</a></p>
@@ -21,29 +24,32 @@
     <div id="goal">
         <h2>當前目標</h2>
         <ol type="I">
-            <li >今年平安過，不要被搞</li>
-            <li >共筆繼續維持更新---><a href="https://hackmd.io/@110FJU-MIIA/Bky8zkfqF">Hackmd共筆頁面</a></li>
-            <li >健身練出胸肌腹肌大肌肌</li>
+            <li >今年平安過，不要被搞</li><br>
+            <li >共筆繼續維持更新---><a href="https://hackmd.io/@110FJU-MIIA/Bky8zkfqF">Hackmd共筆頁面</a></li><br>
+            <li >健身練出胸肌腹肌大肌肌</li><br>
             <li >成為本子繪師(應該是瑟圖繪師uwu</li>
         </ol>
     </div>
     <div id="hobby">
         <h2>興趣愛好</h2>
         <ul>
-            <li>打遊戲</li>
-            <li>聽音樂</li>
-            <li>掛YT看Vtuber，當個可悲VT豚</li>
+            <li>打遊戲</li><br>
+            <li>聽音樂</li><br>
+            <li>掛YT看Vtuber，當個可悲VT豚</li><br>
             <li>研究酷酷的code</li>
         </ul>
     </div>
     <div id="recommend">
         <h2>1,2,3 接下來是推坑時間</h2>
         <a href="https://www.youtube.com/channel/UC3ZTQ8VZVCpwLHjFKSFe5Uw/about">森森鈴蘭</a><br>
+        <!-- iframe是用於插入影片的語法，直接到yt影片分享中的嵌入複製貼上就行，細項可以再另外調整，有興趣一樣自行搜尋語法 -->
         <iframe src="https://www.youtube.com/embed/prUPEKolQAI?start=22" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>他好婆，我好暈</p>
     </div>
     <h3><a href="https://www.youtube.com/watch?v=3jBGjQtFnGE">背景使用影片網址</a>
     </h3>
+    <!-- 這裡就是這次網頁的最大(檔案真的很大)爆點:背景影片!
+    video指令後面三個指令應該都看得懂吧(muted刪掉能聽到影片聲音，不過有機率沒辦法播)，下面的source就用影片的檔案相對位置就行，剩下的就css見 -->
     <video autoplay loop muted class="back">
         <source src="videos\videoplayback.mp4">
     </video>
