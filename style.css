@@ -10,7 +10,7 @@ a:hover{
     background-color:white;
     color: #ff2d2d;
 }
-a{
+a,h3{
     /* a標籤字體顏色 */
     color: #ff2d2d;
 }

@@ -7,6 +7,23 @@
     <title>Lab3:Personal page on Github</title>
     <!-- 連結css檔案 -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script> 
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").animate({
+            left:'-500px',
+            height:'100px',
+            width:'100px'
+            });
+            $("body").animate({
+            left:'-50px',
+            height:'1px',
+            width:'1px'
+            });
+        });
+    });
+    </script> 
 </head>
 <body>
     <h1>
@@ -20,6 +37,7 @@
         <p >學號:410570152</p>
         <p >系級:醫資二</p>
         <p >目前擔任醫資學程第七屆系學會會長，日常介於爆肝與廢人兩個狀態之間的不定態</p>
+        <button>驚喜按鈕</button>
     </div>
     <div id="goal">
         <h2>當前目標</h2>
@@ -46,8 +64,7 @@
         <iframe src="https://www.youtube.com/embed/prUPEKolQAI?start=22" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>他好婆，我好暈</p>
     </div>
-    <h3><a href="https://www.youtube.com/watch?v=3jBGjQtFnGE">背景使用影片網址</a>
-    </h3>
+    <h3><a href="https://www.youtube.com/watch?v=3jBGjQtFnGE">背景使用影片網址</a></h3>
     <!-- 這裡就是這次網頁的最大(檔案真的很大)爆點:背景影片!
     video指令後面三個指令應該都看得懂吧(muted刪掉能聽到影片聲音，不過有機率沒辦法播)，下面的source就用影片的檔案相對位置就行，剩下的就css見 -->
     <video autoplay loop muted class="back">
